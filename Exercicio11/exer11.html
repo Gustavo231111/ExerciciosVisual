@@ -9,12 +9,32 @@
     <p id="mensagem"></p>
 
 
-<script src="exer11.js">
-var valor;
-
-valor=Number(prompt("Escolha um valor"));
+<script>
+    var n, sequencia;
 
 
+n= prompt("Informe um valor para N:");
+
+
+n= parseInt(n);
+
+
+for (var i = 1; i <= n; i++) {
+
+
+    if(i==n){
+        sequencia+=i;
+    }else{
+        sequencia +=i+ ",";
+       
+       
+    }
+   
+   
+}
+
+
+     document.getElementById('mensagem').innerHTML = `Sequência de 1 até ${n}: ${sequencia}`;
 
 </script>
 
